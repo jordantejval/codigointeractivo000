@@ -1,0 +1,32 @@
+<div style="text-align: center;">
+  <h1>
+    Prueba de componente Routing
+  </h1>
+</div>
+
+<h2>Opciones de ruta</h2>
+
+<ul>
+  <li>
+    <h2><a [routerLink]="['/']">Abrir Home</a></h2>
+  </li>
+  <li>
+    <h2><a [routerLink]="['/componente1']">Opcion componente 1</a></h2>
+  </li>
+  <li>
+    <h2><a [routerLink]="['/componente2']">Opcion componente 2</a></h2>
+  </li>
+  <li>
+  <h2><a [routerLink]="['/componente223232323']">Ruta desconocida</a></h2>
+  </li>
+  <li>
+    <h2><a [routerLink]="['/componente2', 7000]">Pasar un parametro</a></h2>
+  </li>
+  <li>
+    <h2><a [routerLink]="['/componente1', 900, 1200]">Pasar dos parametros</a></h2>
+    </li>
+</ul>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
